@@ -60,12 +60,8 @@ export const HomeIndexStyle = styled.div`
 
   /* Project Image */
   #projects .project .project-link {
-    margin: auto 0;
-    display: block;
-    color: #252934;
-    overflow: hidden;
+    margin: auto;
     text-align: center;
-    border-radius: 25px;
     border: ${props => (props.darkTheme ? 'none' : '1px solid #fafafa')};
     transition: 300ms;
 
