@@ -1,6 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { extractCritical } from '@emotion/server';
-
+import Head from 'next/head';
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);

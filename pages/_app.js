@@ -1,4 +1,5 @@
 import GlobalStyles from 'components/globals/GlobalStyles';
+import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import Footer from 'components/footer';
@@ -41,6 +42,15 @@ function App({ Component, pageProps }) {
   const darkTheme = theme === 'dark';
   return (
     <>
+      <Head>
+        <meta charSet='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link
+          rel='icon'
+          type='image/png'
+          href='https://s2.googleusercontent.com/s2/favicons?domain=www.jacinto.design'
+        />
+      </Head>
       <CacheProvider value={cache}>
         <GlobalStyles />
         <NavAndFooterFlex>

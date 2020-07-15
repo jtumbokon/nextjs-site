@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from '@emotion/styled';
@@ -50,6 +51,9 @@ const imageGallery = props => {
 
   return (
     <>
+      <Head>
+        <title>Image Gallery</title>
+      </Head>
       <ImageGalleryStyle darkTheme={props.darkTheme}>
         <div className='app'>
           <h1>Unsplash Image Gallery!</h1>

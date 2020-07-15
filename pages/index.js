@@ -6,15 +6,11 @@ import {
   faExternalLinkAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  fab,
   faReact,
   faSass,
   faCss3Alt,
   faJsSquare,
   faNode,
-  faTwitter,
-  faGithub,
-  faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home(props) {
