@@ -6,7 +6,6 @@ import Navigation from 'components/navigation';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { CacheProvider } from '@emotion/react';
 import { cache } from '@emotion/css';
-
 const useDarkMode = () => {
   const [theme, setTheme] = useState('light');
 

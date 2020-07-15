@@ -1,5 +1,4 @@
 import { Global, css } from '@emotion/core';
-import { rem } from 'polished';
 const GlobalStyles = props => (
   <>
     <Global
