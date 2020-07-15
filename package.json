@@ -1,0 +1,41 @@
+{
+  "name": "site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/free-regular-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "axios": "^0.19.2",
+    "emotion": "^10.0.27",
+    "emotion-server": "^10.0.27",
+    "@emotion/cache": "11.0.0-next.12",
+    "@emotion/css": "11.0.0-next.12",
+    "@emotion/react": "11.0.0-next.12",
+    "@emotion/server": "11.0.0-next.12",
+    "emotion-theming": "^10.0.27",
+    "next": "9.4.4",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.6.1",
+    "polished": "^3.6.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-infinite-scroll-component": "^5.0.5",
+    "styled-components": "^5.1.1",
+    "uuidv4": "^6.1.1"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1"
+  }
+}
