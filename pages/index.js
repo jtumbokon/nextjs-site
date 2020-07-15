@@ -80,6 +80,9 @@ export default function Home(props) {
   };
   return (
     <>
+      <Head>
+        <title>Jan Tumbokon</title>
+      </Head>
       <HomeIndexBodyStyle darkTheme={props.darkTheme} />
       <HomeIndexStyle darkTheme={props.darkTheme}>
         <div className='content'>
