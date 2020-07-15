@@ -102,11 +102,15 @@ export const HomeIndexStyle = styled.div`
 
   /* Project Details */
   #projects .project .project-details {
-    margin: auto 0;
     @media only screen and (max-width: 500px) {
       justify-content: center;
       align-items: center;
       text-align: center;
+    }
+    @media only screen and (min-width: 1150px) {
+      display: flex;
+      flex-direction: column;
+      flex: 0 auto;
     }
   }
 
