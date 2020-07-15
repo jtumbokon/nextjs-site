@@ -39,7 +39,7 @@ const imageGallery = props => {
         setImages(images => [...images, ...photosArray]);
       }
     } catch (error) {
-      console.error(error);
+      return error;
     }
   };
 
