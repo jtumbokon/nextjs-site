@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import { HomeIndexStyle, HomeIndexBodyStyle } from 'components/homeIndexStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
