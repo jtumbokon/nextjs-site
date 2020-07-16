@@ -82,7 +82,7 @@ const imageGallery = props => {
                   key={index}
                   target='_blank'
                   rel='noopener noreferrer'>
-                  <img src={image.urls.regular} alt={image.alt_description} />
+                  <img src={image.urls.small} alt={image.alt_description} />
                 </a>
               ))}
             </div>
