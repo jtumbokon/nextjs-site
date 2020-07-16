@@ -236,9 +236,11 @@ export const HomeIndexStyle = styled.div`
   #projects .project-details .buttons {
     display: flex;
     justify-content: flex-start;
+    padding: 2rem 0;
     @media only screen and (max-width: 500px) {
       flex-direction: column;
       align-items: center;
+      padding: 0;
     }
   }
 
@@ -253,6 +255,7 @@ export const HomeIndexStyle = styled.div`
     font-size: 1.2rem;
     text-align: center;
     margin-right: 2rem;
+    align-items: center;
     @media only screen and (max-width: 3840px) {
       font-size: 2rem;
     }
@@ -273,8 +276,12 @@ export const HomeIndexStyle = styled.div`
     }
     @media only screen and (max-width: 450px) {
       font-size: 0.8rem;
-      margin: 0.5rem 0;
-      text-align: center;
+      margin: 0.2rem 0;
+      padding: 0.5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
   }
 

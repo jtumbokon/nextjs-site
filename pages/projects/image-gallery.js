@@ -161,6 +161,7 @@ const ImageGalleryStyle = styled.div`
   }
 
   input[type='text'] {
+    outline: none;
     width: 70%;
     @media only screen and (max-width: 800px) {
       width: 60%;
@@ -186,6 +187,7 @@ const ImageGalleryStyle = styled.div`
   }
 
   button {
+    outline: none;
     width: 20%;
     @media only screen and (max-width: 800px) {
       width: 25%;
