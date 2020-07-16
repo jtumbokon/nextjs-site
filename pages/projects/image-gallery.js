@@ -121,6 +121,9 @@ const ImageGalleryStyle = styled.div`
     min-height: 100vh;
     background: ${props => (props.darkTheme ? 'rgba(0,0,0,.9)' : '#dcdcdc')};
     padding: 7rem;
+    @media only screen and (max-width: 1050px) {
+      padding: 7rem 3rem;
+    }
   }
 
   .error {
@@ -147,17 +150,33 @@ const ImageGalleryStyle = styled.div`
   }
 
   form {
-    margin-bottom: 50px;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+    }
   }
 
   input[type='text'] {
-    min-width: 400px;
-    border-radius: 50px;
-    padding: 15px 20px;
+    width: 70%;
+    @media only screen and (max-width: 800px) {
+      width: 60%;
+    }
+    @media only screen and (max-width: 700px) {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+    @media only screen and (max-width: 4500px) {
+      padding: 0.5rem;
+    }
+    border-radius: 3rem;
+    padding: 1rem;
     border: 1px solid #fff;
-    outline: none;
-    margin-right: 12px;
-    font-size: 18px;
+    margin-right: 1rem;
+    font-size: 1.2rem;
     transition: 0.3s ease border-color;
   }
 
@@ -167,31 +186,53 @@ const ImageGalleryStyle = styled.div`
   }
 
   button {
-    padding: 15px 20px;
-    border-radius: 50px;
+    width: 20%;
+    @media only screen and (max-width: 800px) {
+      width: 25%;
+    }
+    @media only screen and (max-width: 700px) {
+      width: 50%;
+      font-size: 1rem;
+    }
+    @media only screen and (max-width: 450px) {
+      padding: 0.5rem;
+    }
+    padding: 0.6rem;
+    border-radius: 3rem;
     border: none;
-    background: #222;
-    color: #bbb;
-    font-size: 18px;
+    background: #fff;
+    color: #000;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: 0.3s ease all;
   }
 
   button:hover {
-    background: #111;
+    background: #ff0000;
     color: #eee;
   }
 
   .image-grid {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(50px, 200px);
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .image {
+    height: 350px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 33.3333%;
+    flex-basis: 350px;
+    @media only screen and (max-width: 650px) {
+      height: 200px;
+      flex-basis: 200px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #fff;
     padding: 3px;
+    margin: 0.5rem;
     border-radius: 3px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -203,13 +244,8 @@ const ImageGalleryStyle = styled.div`
   }
 
   .image img {
-    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  .image:nth-of-type(3n) {
-    grid-column-end: span 2;
   }
 `;

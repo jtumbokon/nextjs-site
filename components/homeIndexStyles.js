@@ -198,6 +198,9 @@ export const HomeIndexStyle = styled.div`
     @media only screen and (max-width: 640px) {
       font-size: 0.8rem;
     }
+    @media only screen and (max-width: 450px) {
+      font-size: 0.7rem;
+    }
   }
 
   #projects .project-details p {
@@ -270,7 +273,8 @@ export const HomeIndexStyle = styled.div`
     }
     @media only screen and (max-width: 450px) {
       font-size: 0.8rem;
-      margin: 0;
+      margin: 0.5rem 0;
+      text-align: center;
     }
   }
 
