@@ -23,21 +23,16 @@ const imageGallery = props => {
 
   const getPhotos = async () => {
     let unsplashFetch = query
-      ? `${proxyURL}${apiURL}/search?query=${query}&per_page=${perPage}&page=${page}`
-      : `${proxyURL}${apiURL}/photos?page=${page}&per_page=${perPage}`;
+      ? `${apiURL}/search?query=${query}&per_page=${perPage}&page=${page}`
+      : `${apiURL}/photos?page=${page}&per_page=${perPage}`;
 
     try {
       const response = await fetch(unsplashFetch);
       let photosArray = await response.json();
 
-      if (page === 1 && query) {
-        setImages(photosArray.photos.results);
-      }
-      if (query) {
-        setImages(images => [...images, ...photosArray.photos.results]);
-      } else {
-        setImages(images => [...images, ...photosArray]);
-      }
+      query
+        ? setImages(images => [...images, ...photosArray.photos.results])
+        : setImages(images => [...images, ...photosArray]);
     } catch (error) {
       return error;
     }
@@ -46,6 +41,7 @@ const imageGallery = props => {
   const searchPhotos = event => {
     event.preventDefault();
     setPage(1);
+    setImages([]);
     getPhotos();
   };
 
