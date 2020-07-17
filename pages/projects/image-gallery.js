@@ -23,8 +23,8 @@ const imageGallery = props => {
 
   const getPhotos = async () => {
     let unsplashFetch = query
-      ? `${apiURL}/search?query=${query}&per_page=${perPage}&page=${page}`
-      : `${apiURL}/photos?page=${page}&per_page=${perPage}`;
+      ? `${proxyURL}${apiURL}/search?query=${query}&per_page=${perPage}&page=${page}`
+      : `${proxyURL}${apiURL}/photos?page=${page}&per_page=${perPage}`;
 
     try {
       const response = await fetch(unsplashFetch);
